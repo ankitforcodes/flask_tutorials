@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Welcome {{name}}</h1>
+	<h1>Letters in ur names are:</h1>
+	<ul>
+		{% for letter in letters %}
+		<li>{{letter}}</li>
+		{% endfor %}
+	</ul>
+
+	{% if 'A' in letters %}
+		<p>A letter is present in name</p>
+	{% else %}
+		<p>A letter not present in name</p>
+	{% endif %}
+</body>
+</html>
