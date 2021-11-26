@@ -1,0 +1,13 @@
+<form method="POST" action="/home">
+	{{ html_form.hidden_tag() }}
+	{{ html_form.fname.label }} {{ html_form.fname }}
+	</br>
+	{{ html_form.teenage_flag.label }} {{ html_form.teenage_flag }}
+	</br>
+	{{ html_form.gender.label }} {{ html_form.gender }}
+	</br>
+	{{ html_form.comm_mode.label }} {{ html_form.comm_mode }}
+	</br>
+	{{ html_form.about_you.label }} {{ html_form.about_you }}
+	{{ html_form.submit() }}
+</form>
