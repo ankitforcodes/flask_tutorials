@@ -1,0 +1,14 @@
+<p>
+	{% if first_name %}
+		Your first name is {{ first_name }}
+
+	{% else %}
+		Enter your first name
+	{% endif %}
+</p>
+
+<form method="POST" action="/home">
+	{{ html_form.hidden_tag() }}
+	{{ html_form.fname.label }} {{ html_form.fname() }}
+	{{ html_form.submit() }}
+</form>
